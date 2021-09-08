@@ -1,0 +1,17 @@
+{
+  "name": "node_exercise",
+  "version": "1.0.0",
+  "description": "First Springboard Node.js exercise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "cat"
+  ],
+  "author": "Jesse Brink",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}

@@ -26,7 +26,7 @@ const readFromURL = async(url) => {
         let text = response.data;
         let mm = new MarkovMachine(text);
         console.log(mm.makeText());
-    return;
+        return;
     } catch(err) {
         console.log(err);
         console.log("Sorry, an error occurred.")

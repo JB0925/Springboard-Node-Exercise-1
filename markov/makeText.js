@@ -37,11 +37,7 @@ const readFromURL = async(url) => {
 // or "url", which will then determine which of the above methods
 // is called.
 const determineIfFileOrURL = (type, filePath) => {
-    if (type.toLowerCase() === 'file') {
-        readFromFile(filePath);
-        return;
-    };
-    readFromURL(filePath);
+    type.toLowerCase() === 'file' ? readFromFile(filePath) : readFromURL(filePath);
 };
 
 // Error handling for command line instances with too few or too many arguments.

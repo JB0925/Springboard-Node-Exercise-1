@@ -1,0 +1,14 @@
+{
+  "name": "markov",
+  "version": "1.0.0",
+  "description": "A Markov machine for Springboard.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jesse Brink",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}

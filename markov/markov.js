@@ -34,21 +34,21 @@ class MarkovMachine {
 
   makeText(numWords = 100) {
     let text = '';
-    
+    let newWord;
     // choose a random word from the list of words to start with
     const words = this.words;
     let idx = Math.floor(Math.random() * words.length);
     text = words[idx];
-
+    newWord = text;
+    
     // set our newWord = text to start with
     // newWord is used to get and concatenate the next word in the chain
     // to the "text" variable
-    let newWord = text;
 
     // loop through for an amount of times equal to "numWords"
     // use newWord to get the array at "this.chains[newWord]", and get its length
     // add a random word f
-    for (let i = 0; i < numWords; i++) {
+    for (let i = 1; i < numWords; i++) {
       let wordIdx = Math.floor(Math.random() * this.chains[newWord].length)
       if (!this.chains[newWord].includes(null)) {
         text += ` ${this.chains[newWord][wordIdx]}`
